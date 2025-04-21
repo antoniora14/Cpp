@@ -30,8 +30,8 @@ int main()
     std::cout << "BEFORE MEMORY PAGING" << std::endl;
     PrintMemoryUsage();
 
-    const SIZE_T totalVirtualMemory = _100_MB_;
-    const SIZE_T chunkSize = _128_KB_;
+    const SIZE_T totalVirtualMemory = _100_GB_;
+    const SIZE_T chunkSize = _1_GB_;
 
     // Reserve Virtual Memory (not committed yet)
     LPVOID baseAddress = VirtualAlloc(nullptr, totalVirtualMemory, MEM_RESERVE, PAGE_READWRITE);
